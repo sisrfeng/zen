@@ -19,7 +19,11 @@ function M.hex2rgb(hex)
 end
 
 function M.rgb2hex(r, g, b)
-    return string.format("#%02x%02x%02x", r, g, b)
+    return string.format("#%02x%02x%02x",
+                         r,
+                         g,
+                         b
+    )
 end
 
 function M.darken(hex, amount)
